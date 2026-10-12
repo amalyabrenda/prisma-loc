@@ -556,7 +556,6 @@ export default function SuperAdminClusteringPage() {
                 >
                   <div className="flex items-center justify-between gap-2">
                     <div className={`flex items-center gap-1.5 ${isActive ? colors.text : 'text-gray-500 dark:text-gray-400'}`}>
-                      {tab.icon}
                       <span className={`font-bold text-[13px] ${isActive ? colors.text : 'text-gray-700 dark:text-gray-200'}`}>
                         {tab.label}
                       </span>

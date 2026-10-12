@@ -812,7 +812,6 @@ export default function ClusteringDashboardPage() {
                     <div
                       className={`flex items-center gap-1.5 ${isActive ? colors.text : "text-gray-500 dark:text-gray-400"}`}
                     >
-                      {tab.icon}
                       <span
                         className={`font-bold text-[13px] ${isActive ? colors.text : "text-gray-700 dark:text-gray-200"}`}
                       >

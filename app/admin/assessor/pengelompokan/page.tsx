@@ -940,7 +940,6 @@ export default function PengelompokanDashboard() {
                 >
                   <div className="flex items-center justify-between gap-2 mb-2.5">
                     <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded bg-slate-200 dark:bg-slate-700" />
                       <div className="w-20 h-4 rounded bg-slate-200 dark:bg-slate-700" />
                     </div>
                     <div className="w-7 h-4 rounded-full bg-slate-200 dark:bg-slate-700" />
@@ -952,7 +951,6 @@ export default function PengelompokanDashboard() {
               TABS.map((tab) => {
                 const isActive = activeTab === tab.id
                 const colors = getTabColorClasses(tab.id, isActive)
-                const TabIcon = tab.icon
                 const count = tabCounts[tab.id]
 
                 return (
@@ -967,7 +965,6 @@ export default function PengelompokanDashboard() {
                   >
                     <div className="flex items-center justify-between gap-2">
                       <div className={`flex items-center gap-1.5 ${isActive ? colors.text : 'text-gray-500 dark:text-gray-400'}`}>
-                        <TabIcon className="w-4 h-13" />
                         <span className={`font-bold text-[13px] ${isActive ? colors.text : 'text-gray-700 dark:text-gray-200'}`}>
                           {tab.label}
                         </span>
